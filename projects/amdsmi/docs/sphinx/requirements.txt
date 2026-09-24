@@ -204,8 +204,9 @@ referencing==0.37.0
 requests==2.33.0
     # via
     #   pygithub
+    #   rocm-docs-core
     #   sphinx
-rocm-docs-core[api-reference]==1.40.2
+rocm-docs-core[api-reference]==1.41.0
     # via -r requirements.in
 roman-numerals-py==3.1.0
     # via sphinx
@@ -252,7 +253,7 @@ sphinxcontrib-htmlhelp==2.1.0
     # via sphinx
 sphinxcontrib-jsmath==1.0.1
     # via sphinx
-sphinxcontrib-mermaid==2.1.0
+sphinxcontrib-mermaid==2.1.1
     # via -r requirements.in
 sphinxcontrib-qthelp==2.0.0
     # via sphinx
