@@ -93,7 +93,7 @@ jobs:
           name: hipfile-build-dir-${{ inputs.platform }}-${{ inputs.rocm_version }}-${{ inputs.cxx_compiler }}-cxx${{ inputs.cxx_standard }}
           path: ${{ github.workspace }}/hipfile-build-dir
       - name: Authenticating to GitHub Container Registry
-        uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
+        uses: docker/login-action@81c6f93d4bc991e510b342a00b419b3bb4efc5c6 # v4.7.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -306,7 +306,7 @@ jobs:
 #            }}
 #          merge-multiple: true
 #      - name: Authenticating to GitHub Container Registry
-#        uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
+#        uses: docker/login-action@81c6f93d4bc991e510b342a00b419b3bb4efc5c6 # v4.7.0
 #        with:
 #          registry: ghcr.io
 #          username: ${{ github.actor }}

@@ -80,7 +80,7 @@ jobs:
           apt install -y libdw-dev pkg-config
           echo "✅ ROCm Dependencies Installed!"
       - name: Install Python
-        uses: actions/setup-python@v7
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: '3.9'
       - name: Python dependency installs
