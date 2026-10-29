@@ -30,7 +30,7 @@ jobs:
     steps:
       - name: Generate GitHub App token
         id: gen_token
-        uses: actions/create-github-app-token@v3.2.0
+        uses: actions/create-github-app-token@v3.3.0
         with:
           app-id: ${{ secrets.APP_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
@@ -47,7 +47,7 @@ jobs:
           sparse-checkout-cone-mode: true
 
       - name: Set up Python 3.x
-        uses: actions/setup-python@v7
+        uses: actions/setup-python@v7.1.0
         with:
           python-version: "3.x"
 

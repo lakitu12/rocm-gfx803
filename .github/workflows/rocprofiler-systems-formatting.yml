@@ -31,7 +31,7 @@ jobs:
           sparse-checkout: projects/rocprofiler-systems
 
       - name: Use markdownlint-cli2
-        uses: DavidAnson/markdownlint-cli2-action@21c1be1b93ad9ed58fa840aacc3f279cde2a72ff # v24.2.0
+        uses: DavidAnson/markdownlint-cli2-action@696eb3f2509270d7b882d2aa68347bc676e7af34 # v25.0.0
         with:
           globs: "projects/rocprofiler-systems/**/*.md"
 
@@ -55,7 +55,7 @@ jobs:
           sed -i "s|docs/\*\*/\*.md|projects/rocprofiler-systems/docs/**/*.md|g" .spellcheck.yaml
 
       - name: Run spellcheck
-        uses: rojopolis/spellcheck-github-actions@c1934c57e61c734261d7905b525486b12f8eb670 # 0.66.0
+        uses: rojopolis/spellcheck-github-actions@f2df388397bcb35f524b4a0a3567d6b1e8a4e595 # 0.68.0
 
       - name: On fail
         if: failure()
@@ -74,7 +74,7 @@ jobs:
         sparse-checkout: projects/rocprofiler-systems
 
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v7
+      uses: actions/setup-python@v7.1.0
       with:
         python-version: ${{ matrix.python-version }}
 
